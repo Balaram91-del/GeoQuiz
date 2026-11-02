@@ -239,3 +239,45 @@ main{
     width: 100%;
   }
 }
+
+.info-section{
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 7rem;
+
+  @media (max-width:800px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50%;
+    gap: 1.3rem;
+  }
+}
+
+.info-card{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Raleway";
+}
+
+.image-container{
+  font-size: 2rem;
+  background-color: var(--color-surface);
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.text-container h3{
+  color: var(--color-text-primary);
+}
+
+.text-container p{
+  color: var(--color-text-secondary);
+}
+
+.info-border{
+  height: 2rem;
+  border: solid 1px var(--color-border);
+}
