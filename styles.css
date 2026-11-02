@@ -1,0 +1,241 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Background */
+  --color-background: #fdf9f3;
+  --color-surface: #e3f0da;
+
+  /* Text */
+  --color-text-primary: #22232d;
+  --color-text-secondary: #6b6a70;
+
+  /* Brand colors */
+  --color-primary: #287646;
+  --color-primary-light: #eaf3e3;
+
+  /* Buttons and highlights */
+  --color-accent: #fd6230;
+  --color-accent-hover: #e94e22;
+
+  /* Borders and separators */
+  --color-border: #e2ded8;
+}
+
+/* utility classes */
+
+a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+span {
+  color: var(--color-primary);
+}
+
+.primary-btn{
+  font-family: "Inter";
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  padding: 10px 15px;
+  border-radius: 2rem;
+}
+
+.primary-btn:hover{
+  background-color: var(--color-accent-hover);
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+nav {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-family: "KoHo";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+  @media(max-width: 800px){
+    display: none;
+  }
+}
+
+menu a {
+  font-family: "Inter";
+  color: var(--color-text-primary);
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  corner-shape: squircle;
+  border-radius: 2.3rem;
+}
+
+menu a:hover {
+  /* color: var(--color-accent); */
+  background-color: var(--color-surface);
+}
+
+.theme-btn {
+  background-color: transparent;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  @media (max-width:800px) {
+    display: none;
+  }
+}
+
+.theme-btn:hover {
+  transform: rotate(-45deg);
+}
+
+.hamburger-menu{
+  background-color: transparent;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: none;
+
+  @media (max-width: 800px){
+    display: block;
+  }
+}
+
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2rem 0;
+}
+
+.hero-section{
+  display: flex;
+  width: 80%;
+  margin-top: 5%;
+  height: 40vh;
+
+  @media (max-width:900px) {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+.hero-content{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 100%;
+
+  @media (max-width:900px) {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.banner{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--color-surface);
+  width:min-content;
+  padding: 0 15px;
+  border-radius: 40px;
+
+  @media (max-width:900px) {
+    font-size: 0.8rem;
+  }
+}
+
+.banner img{
+  @media (max-width:900px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.banner p{
+  font-family: "Raleway";
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.middle-dot{
+  font-weight: 900;
+  font-size: large;
+}
+
+.hero-content h1{
+  font-family: "Funnel Sans";
+  font-size: 3rem;
+  line-height: 90%;
+  margin-bottom: 1rem;
+
+  @media (max-width:900px) {
+    font-size: 2rem;
+  }
+}
+
+.sub-heading{
+  font-family: "Raleway";
+  font-size: 1.5rem;
+  line-height: 95%;
+  margin-bottom: 1rem;
+
+  @media (max-width:900px) {
+    font-size: 1.3rem;
+  }
+}
+
+.hero-image{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width:900px) {
+    display: flex;
+    align-self: flex-start;
+    order: -1;
+    width: 100%;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.hero-image img{
+  width: 600px;
+
+  @media (max-width:900px) {
+    width: 100%;
+  }
+}
