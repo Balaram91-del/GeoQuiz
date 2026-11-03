@@ -36,7 +36,7 @@ span {
   color: var(--color-primary);
 }
 
-.primary-btn{
+.primary-btn {
   font-family: "Inter";
   background-color: var(--color-accent);
   color: var(--color-background);
@@ -44,7 +44,7 @@ span {
   border-radius: 2rem;
 }
 
-.primary-btn:hover{
+.primary-btn:hover {
   background-color: var(--color-accent-hover);
 }
 
@@ -79,7 +79,7 @@ menu {
   align-items: center;
   gap: 3rem;
 
-  @media(max-width: 800px){
+  @media (max-width: 800px) {
     display: none;
   }
 }
@@ -91,6 +91,7 @@ menu a {
   padding: 5px 10px;
   corner-shape: squircle;
   border-radius: 2.3rem;
+  text-decoration: none;
 }
 
 menu a:hover {
@@ -104,7 +105,7 @@ menu a:hover {
   transition: all 0.3s;
   cursor: pointer;
 
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
     display: none;
   }
 }
@@ -113,19 +114,19 @@ menu a:hover {
   transform: rotate(-45deg);
 }
 
-.hamburger-menu{
+.hamburger-menu {
   background-color: transparent;
   font-size: 1.2rem;
   transition: all 0.3s;
   cursor: pointer;
   display: none;
 
-  @media (max-width: 800px){
+  @media (max-width: 800px) {
     display: block;
   }
 }
 
-main{
+main {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -134,19 +135,19 @@ main{
   margin: 2rem 0;
 }
 
-.hero-section{
+.hero-section {
   display: flex;
   width: 80%;
   margin-top: 5%;
   height: 40vh;
 
-  @media (max-width:900px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     width: 90%;
   }
 }
 
-.hero-content{
+.hero-content {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -154,74 +155,74 @@ main{
   justify-content: flex-end;
   height: 100%;
 
-  @media (max-width:900px) {
+  @media (max-width: 900px) {
     width: 100%;
     align-items: center;
     text-align: center;
   }
 }
 
-.banner{
+.banner {
   display: flex;
   align-items: center;
   gap: 5px;
   background-color: var(--color-surface);
-  width:min-content;
+  width: min-content;
   padding: 0 15px;
   border-radius: 40px;
 
-  @media (max-width:900px) {
+  @media (max-width: 900px) {
     font-size: 0.8rem;
   }
 }
 
-.banner img{
-  @media (max-width:900px) {
+.banner img {
+  @media (max-width: 900px) {
     width: 40px;
     height: 40px;
   }
 }
 
-.banner p{
+.banner p {
   font-family: "Raleway";
   color: var(--color-primary);
   font-weight: 700;
 }
 
-.middle-dot{
+.middle-dot {
   font-weight: 900;
   font-size: large;
 }
 
-.hero-content h1{
+.hero-content h1 {
   font-family: "Funnel Sans";
   font-size: 3rem;
   line-height: 90%;
   margin-bottom: 1rem;
 
-  @media (max-width:900px) {
+  @media (max-width: 900px) {
     font-size: 2rem;
   }
 }
 
-.sub-heading{
+.sub-heading {
   font-family: "Raleway";
   font-size: 1.5rem;
   line-height: 95%;
   margin-bottom: 1rem;
 
-  @media (max-width:900px) {
+  @media (max-width: 900px) {
     font-size: 1.3rem;
   }
 }
 
-.hero-image{
+.hero-image {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  @media (max-width:900px) {
+  @media (max-width: 900px) {
     display: flex;
     align-self: flex-start;
     order: -1;
@@ -232,52 +233,163 @@ main{
   }
 }
 
-.hero-image img{
+.hero-image img {
   width: 600px;
 
-  @media (max-width:900px) {
+  @media (max-width: 900px) {
     width: 100%;
   }
 }
 
-.info-section{
+.info-section {
   width: 75%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 7rem;
 
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 50%;
     gap: 1.3rem;
   }
 }
 
-.info-card{
+.info-card {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-family: "Raleway";
 }
 
-.image-container{
+.image-container {
   font-size: 2rem;
   background-color: var(--color-surface);
   padding: 6px;
   border-radius: 50%;
 }
 
-.text-container h3{
+.text-container h3 {
   color: var(--color-text-primary);
 }
 
-.text-container p{
+.text-container p {
   color: var(--color-text-secondary);
 }
 
-.info-border{
+.info-border {
   height: 2rem;
   border: solid 1px var(--color-border);
+}
+
+.scroll-wheel-container {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+/* scroll-down-animation */
+.mouse-scroll {
+  font-family:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+.mouse {
+  width: 30px;
+  height: 50px;
+  border: 2px solid #374151;
+  border-radius: 20px;
+  position: relative;
+}
+.wheel {
+  width: 4px;
+  height: 8px;
+  background: #374151;
+  border-radius: 2px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll 1.5s infinite;
+}
+.arrow-scroll {
+  color: #374151;
+  animation: fade 1.5s infinite;
+}
+@keyframes scroll {
+  0% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 30px;
+    opacity: 0;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.featured-quiz-section {
+  margin-top: 60px;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.quiz-card-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+}
+
+.featured-quiz-section h1 {
+  font-family: "Funnel Sans";
+  color: var(--color-primary);
+}
+
+.featured-quiz-section .quiz-card {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px var(--color-border);
+  padding: 10px 15px;
+  gap: 1rem;
+  border-radius: 20px;
+  corner-shape: squircle;
+
+  @media (max-width:900px) {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .image-container{
+    color: var(--color-primary);
+  }
+
+  h3{
+    font-family: "Raleway";
+  }
+
+  p{
+    font-family: "Inter";
+    color: var(--color-text-secondary);
+  }
 }
