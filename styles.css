@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 :root {
   /* Background */
   --color-background: #fdf9f3;
@@ -36,7 +40,7 @@
   --color-accent: #fd6230;
   --color-accent-hover: #e94e22;
 
-  --color-border: #e2ded8;
+  --color-border: #e2ded83e;
 }
 
 /* utility classes */
