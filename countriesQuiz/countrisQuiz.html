@@ -1,11 +1,106 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>countries quiz</title>
-  </head>
-  <body>
-    this will contain countries quiz. 
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- css file linking -->
+  <link rel="stylesheet" href="./countriesQuizStyles.css" />
+
+  <!-- icons link  -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <title>countries quiz</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <a href="../index.html">Geo<span>Quiz</span></a>
+    </div>
+    <menu>
+      <a href="../index.html">HOME</a>
+      <a href="#quiz-section">QUIZZES</a>
+      <a href="#quiz-section">DAILY TRIVIA</a>
+      <a href="#game-section">GAMES</a>
+    </menu>
+    <div class="side-menu">
+      <button class="theme-btn" id="theme-btn">
+        <i id="theme-icon" class="ri-sun-fill"></i>
+      </button>
+    </div>
+  </nav>
+  <main>
+    <section id="intro-section">
+      <h1>Country Quiz</h1>
+      <p>
+        You will be given 15 minutes and you have to name however number of
+        countries you can.
+      </p>
+      <button id="quiz-start-btn" class="primary-btn">Start Now</button>
+    </section>
+
+    <section id="quiz-section">
+      <div class="quiz-header-container">
+        <h3>Enter the name of the country:</h3>
+      </div>
+      <div class="input-container">
+        <input type="text" id="country-input-box" />
+        <button class="secondary-btn" id="country-entry-btn">Enter</button>
+      </div>
+      <p id="warning-message"></p>
+
+      <div class="answer-container">
+        <div class="countries-container">
+          <div class="header-container">
+            <h2>Countries you have entered</h2>
+            <h2 id="score-card"> <strong>0/250</strong><h2>
+          </div>
+          <div class="country-list" id="country-list">
+            <p class="country" style="display: none;"></p>
+          </div>
+        </div>
+        <div class="world-map-container">
+          <img src="./assets/vecteezy_doodle-freehand-drawing-of-world-map_13079128.png" alt="">
+        </div>
+      </div>
+      <div class="btn-and-timer-container">
+        <button id="quiz-end-btn" class="primary-btn">End Quiz</button>
+        <div class="timer-container">
+          <h3 id="minutes">14</h3>
+          <h3>:</h3>
+          <h3 id="seconds">59</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="result-section" id="result-section">
+      <h1 class="result-section-header" id="result-section-header">Hooray! you scored 69/197</h1>
+      <a href="../index.html" class="primary-btn">Go Home</a>
+      <div class="list-container">
+        <div class="countries-missed">
+          <h3>Countries you missed</h3>
+          <div class="country-list" id="countries-missed">
+            <p class="country" style="display: none;"></p>
+          </div>
+        </div>
+        <div class="countries-entered">
+          <h3>Countries you named</h3>
+          <div class="country-list" id="countries-entered">
+            <p class="country" style="display: none;"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./countriesQuizScript.js"></script>
+</body>
+
 </html>

@@ -36,6 +36,7 @@ html{
   --color-text-secondary: #e3f0dac8;
 
   --color-primary: #00dc82;
+  --color-primary-hover: #287646;
 
   --color-accent: #fd6230;
   --color-accent-hover: #e94e22;
@@ -125,6 +126,7 @@ menu a {
 menu a:hover {
   /* color: var(--color-accent); */
   background-color: var(--color-surface);
+  color: var(--color-primary);
 }
 
 .theme-btn {
