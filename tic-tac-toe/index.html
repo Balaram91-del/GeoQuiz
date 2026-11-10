@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>tic tac toe</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 id="turn-indicator">X's Turn</h1>
+        <div class="board">
+          <button class="box" onclick="play(0,0)"></button>
+          <button class="box" onclick="play(0,1)"></button>
+          <button class="box" onclick="play(0,2)"></button>
+          <button class="box" onclick="play(1,0)"></button>
+          <button class="box" onclick="play(1,1)"></button>
+          <button class="box" onclick="play(1,2)"></button>
+          <button class="box" onclick="play(2,0)"></button>
+          <button class="box" onclick="play(2,1)"></button>
+          <button class="box" onclick="play(2,2)"></button>
+        </div>
+        <h1 id="winner-banner"></h1>
+        <button id="restart-btn" class="restart-btn" onclick="restartGame()">Restart Game</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
